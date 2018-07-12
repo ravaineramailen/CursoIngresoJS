@@ -7,14 +7,12 @@ y una de las cuatro operaciones básicas (suma, resta,
 se debe informar si el resultado es el correcto o no.
 */
 var respuesta;
-function comenzar()
-{
-
+function comenzar(){
+    
 	
 
 }//FIN DE LA FUNCIÓN
-function Responder()
-{
+function Responder(){
 	
 
 }//FIN DE LA FUNCIÓN

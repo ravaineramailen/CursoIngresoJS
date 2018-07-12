@@ -8,7 +8,39 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  ”Usted pago X de IIBB.”, siendo X el impuesto que se pagó. 
 
  */
-function CalcularPrecio () 
-{
- 	
+function CalcularPrecio () {
+    var cantidad, preciodesc, marca, preciototal, precio
+    precio = 35;
+    preciototal = precio * cantidad;
+    cantidad = document.getElementById("Cantidad").value;
+    marca= document.getElementById("Marca").value;
+    cantidad = parseInt(cantidad);
+    if (cantidad >= 6){
+        preciodesc = preciototal - (preciototal * 0,5);
+        document.getElementById("precioDescuento").value = preciodesc;
+     } else if (cantidad == 5 && marca == "ArgentinaLuz" ){
+        preciodesc = preciototal - (preciototal * 0,4);
+        document.getElementById("precioDescuento").value = preciodesc;            
+     } else if (cantidad == 5){
+        preciodesc = preciototal - (preciototal * 0,3);
+        document.getElementById("precioDescuento").value = preciodesc;
+     } else if (cantidad == 4 && (marca == "FelipeLamparas" || marca == "ArgentinaLuz")){
+        preciodesc = preciototal - (preciototal * 0,25);
+        document.getElementById("precioDescuento").value = preciodesc;
+    }else if (cantidad == 4){
+        preciodesc = preciototal - (preciototal * 0,2);
+        document.getElementById("precioDescuento").value = preciodesc;
+    } else if (cantidad == 3){
+        if (marca == "ArgentinaLuz"){
+            preciodesc = preciototal - (preciototal * 0,15);
+            document.getElementById("precioDescuento").value = preciodesc;
+        }
+    } else if (cantidad == 3){
+        if(marca == "FelipeLamparas")
+        preciodesc = preciototal - (preciototal * 0,1);
+        document.getElementById("precioDescuento").value = preciodesc;
+    } else if(cantidad == 3){
+        preciodesc = preciototal - (preciototal * 0,05);
+        document.getElementById("precioDescuento").value = preciodesc;
+    }
 }

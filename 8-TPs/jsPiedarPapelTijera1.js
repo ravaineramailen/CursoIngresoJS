@@ -6,24 +6,21 @@ a su opción  y le informaremos si ganó, empató o perdió.
 */
 var eleccionMaquina;
 
-function comenzar()
-{
+function comenzar(){
+	eleccionMaquina = parseInt(Math.random() * (4 - 1)) + 1;
+    
+
+
+}//FIN DE LA FUNCIÓN
+function piedra(){
 	
 
-
 }//FIN DE LA FUNCIÓN
-function piedra()
-{
-	
-
-}//FIN DE LA FUNCIÓN
-function papel()
-{
+function papel(){
 
 
 }//FIN DE LA FUNCIÓN
-function tijera()
-{
+function tijera(){
 	
 
 }//FIN DE LA FUNCIÓN

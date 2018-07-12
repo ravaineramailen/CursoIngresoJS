@@ -6,9 +6,10 @@ function mostrar(){
     } else{
         if(edad < 13){
             msj ="La persona es un niño";
-        }}else{
+        } else{
             msj ="La persona es adolescente";
         }
-        alert(msj);
+    }
+     alert(msj);
 }
 //FIN DE LA FUNCIÓN
