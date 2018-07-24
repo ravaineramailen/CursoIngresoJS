@@ -15,6 +15,7 @@ var intentos = 0;
 function comenzar(){
 	numeroSecreto = parseInt(Math.random() * (101 - 1) + 1); //Genero el número RANDOM entre 1 y 100
 	console.log(numeroSecreto);
+	intentos =0;
 }
 
 function verificar(){
@@ -26,21 +27,15 @@ function verificar(){
 		alert("Usted es un Psiquico");
 	} else if (numero == numeroSecreto && intentos == 2){
 		alert("excelente percepción");
-		intentos = 0;
 	}else if (numero == numeroSecreto && intentos == 3){
 		alert("Esto es suerte");
-		intentos = 0;
 	}else if (numero == numeroSecreto && intentos == 4){
 		alert("Excelente técnica");
-		intentos = 0;
 	}else if (numero == numeroSecreto && intentos == 5){
 		alert("Usted está en la medida");
-		intentos = 0;
 	}else if (numero == numeroSecreto && intentos >= 6 && intentos < 10){
 		alert("Falta técnica");
-		intentos = 0;		
 	} else if (numero == numeroSecreto && intentos >= 10){
 		alert("Afortunado en el amor");
-		intentos = 0;
 	}
 } 

@@ -25,6 +25,7 @@ function verificar(){
     if (numero == numeroSecreto){
       alert("GANO");
       contadorIntentos = 0;
+      document.getElementById("intentos").value=0;
     } else if (numero > numeroSecreto){
       alert("Se paso, intente denuevo");
     } else{
