@@ -11,7 +11,6 @@ function mostrar()
 		numero = parseInt (numero);
 		respuesta = prompt("¿Desea seguir?")
 		contador++;
-		if(n)
 	}
 	document.getElementById("maximo").value = maximo;
 	document.getElementById("minimo").value = minimo;

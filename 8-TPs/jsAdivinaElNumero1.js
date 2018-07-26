@@ -8,7 +8,6 @@ secreto del 1 al 100, en la pantalla del juego
 de no ser igual se debe informar si “falta…”  para llegar al número secreto  o si “se pasó…”  del número secreto.
 */
 
-//contadores = var + contante ej.(cont= cont + 1) ej2. (cont ++) (++ cont) (cont+=1) ; acumuladores = var + var ; banderas = var booleana
 var numeroSecreto; 
 var contadorIntentos = 0;
 
