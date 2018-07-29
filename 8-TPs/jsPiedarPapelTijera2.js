@@ -11,39 +11,42 @@ function comenzar(){
 }//FIN DE LA FUNCIÓN
 function piedra(){
 	if(eleccionMaquina == 1){
-		alert("empató");
-		ContadorDeEmpates = ContadorDeEmpates +1;
+		alert("empató"); 
+		ContadorDeEmpates++;
 	} else if( eleccionMaquina == 2){
 		alert("perdio");
-		ContadorDePerdidas = ContadorDePerdidas +1;
+		ContadorDePerdidas++;
 	} else{
 		alert("gano");
-		ContadorDeGanadas = ContadorDeGanadas +1;
+		ContadorDeGanadas++;
 	}
+	mostrarResultado();
 }//FIN DE LA FUNCIÓN
 function papel(){
 	if(eleccionMaquina == 1){
 		alert("gano");
-		ContadorDeGanadas = ContadorDeGanadas +1;
+		ContadorDeGanadas++;
 	} else if( eleccionMaquina == 2){
 		alert("empato");
-		ContadorDeEmpates = ContadorDeEmpates +1;
+		ContadorDeEmpates++;
 	} else{
 		alert("perdio");
-		ContadorDePerdidas = ContadorDePerdidas +1;
+		ContadorDePerdidas++;
 	}
+	mostrarResultado();
 }//FIN DE LA FUNCIÓN
 function tijera(){
 	if(eleccionMaquina == 1){
 		alert("perdio");
-		ContadorDePerdidas = ContadorDePerdidas +1;
+		ContadorDePerdidas++;
 	} else if( eleccionMaquina == 2){
 		alert("gano");
-		ContadorDeGanadas = ContadorDeGanadas +1;
+		ContadorDeGanadas++;
 	} else{
 		alert("empato");
-		ContadorDeEmpates = ContadorDeEmpates +1;
+		ContadorDeEmpates++;
 	}
+	mostrarResultado();
 }//FIN DE LA FUNCIÓN
 
 function mostrarResultado(){
