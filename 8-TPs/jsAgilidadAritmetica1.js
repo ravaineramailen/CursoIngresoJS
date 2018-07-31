@@ -7,7 +7,7 @@ y una de las cuatro operaciones básicas (suma, resta,
 se debe informar si el resultado es el correcto o no.
 */
 var respuesta;
-var primerNumero, segundoNumero, operador, resultado, respuesta;
+var primerNumero, segundoNumero, operador, resultado;
 function comenzar(){
     primerNumero = parseInt(Math.random()* 10) + 1;
     segundoNumero = parseInt(Math.random()* 10) + 1;
@@ -41,6 +41,4 @@ function Responder(){
     } else{
         alert("El resultado es incorrecto");
     }
-	
-
 }//FIN DE LA FUNCIÓN
